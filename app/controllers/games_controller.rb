@@ -16,7 +16,8 @@ class GamesController < ApplicationController
           else
             @score = "Sorry but #{params[:guess]} can't be built"
         end
-    end
+    end 
+    
 
     private
 
