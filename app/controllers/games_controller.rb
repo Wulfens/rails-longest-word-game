@@ -18,7 +18,6 @@ class GamesController < ApplicationController
         end
     end 
     
-
     private
 
     def included?(guess, letters)
