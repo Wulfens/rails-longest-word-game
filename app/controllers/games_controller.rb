@@ -9,11 +9,11 @@ class GamesController < ApplicationController
     def score
         if included?(params[:guess].upcase, params[:letters])
             if english_word?(params[:guess].upcase)
-             @score = "Congratulations! #{params[:guess]} is a valid English word"
+                @score = "Congratulations! #{params[:guess]} is a valid English word"
             else
-             @score = "Sorry but #{params[:guess]} does not seems to be a valid English word..."
+                @score = "Sorry but #{params[:guess]} does not seems to be a valid English word..."
             end
-          else
+            else
             @score = "Sorry but #{params[:guess]} can't be built"
         end
     end
